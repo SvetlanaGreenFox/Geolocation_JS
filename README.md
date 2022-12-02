@@ -1,5 +1,4 @@
-# home-works__Animation
+# home-works__Geolocation
 
-[![Build status](https://ci.appveyor.com/api/projects/status/p9xgesnbp3p6v75w?svg=true)](https://ci.appveyor.com/project/SvetlanaGreenFox/home-works-animation)
+[![Build status](https://ci.appveyor.com/api/projects/status/w01rcokrwp9dowfj?svg=true)](https://ci.appveyor.com/project/SvetlanaGreenFox/geolocation-js)
 
-https://svetlanagreenfox.github.io/home-works__Animation/
