@@ -27,9 +27,9 @@ function showModal() {
   const inputModal = modal.querySelector('.timeline__modal_input');
   const button = modal.querySelector('.modal__ok');
   const cancelBtn = modal.querySelector('.modal__cancel');
-  inputModal.addEventListener('keydown', (e) => {
+  inputModal.addEventListener('keydown', function (e) {
     if (e.keyCode === 13) {
-      const { value } = e;
+      const value = this.value;
       if (checkCoordinates(value)) {
         const coords = prepareCoords(value);
         const newItem = madeMessage(message, coords);
@@ -39,7 +39,7 @@ function showModal() {
     }
   });
   button.addEventListener('click', () => {
-    const { value } = input;
+    const { value } = inputModal;
     if (checkCoordinates(value)) {
       const coords = prepareCoords(value);
       const newItem = madeMessage(message, coords);
