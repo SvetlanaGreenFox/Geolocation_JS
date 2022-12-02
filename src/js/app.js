@@ -27,7 +27,7 @@ function showModal() {
   const inputModal = modal.querySelector('.timeline__modal_input');
   const button = modal.querySelector('.modal__ok');
   const cancelBtn = modal.querySelector('.modal__cancel');
-  inputModal.addEventListener('keydown', function (e) {
+  inputModal.addEventListener('keydown', function addItem(e) {
     if (e.keyCode === 13) {
       const { value } = this;
       if (checkCoordinates(value)) {
