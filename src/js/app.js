@@ -29,7 +29,7 @@ function showModal() {
   const cancelBtn = modal.querySelector('.modal__cancel');
   inputModal.addEventListener('keydown', function (e) {
     if (e.keyCode === 13) {
-      const value = this.value;
+      const { value } = this;
       if (checkCoordinates(value)) {
         const coords = prepareCoords(value);
         const newItem = madeMessage(message, coords);
